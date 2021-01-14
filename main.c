@@ -110,11 +110,12 @@ for(int i=0;i<26;i++){
 void print_r(node* root){
 if(root==NULL)
 return;
-if(root->flag)
-printf("%s %ld\n",root->word,root->count);
+
 for(int i=25; i>=0; i--){
   print(root->children[i]);
   }
+  if(root->flag)
+printf("%s %ld\n",root->word,root->count);
 
   free(root->word);
   free(root);
