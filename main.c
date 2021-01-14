@@ -112,7 +112,7 @@ if(root==NULL)
 return;
 
 for(int i=25; i>=0; i--){
-  print(root->children[i]);
+  print_r(root->children[i]);
   }
   if(root->flag)
 printf("%s %ld\n",root->word,root->count);
